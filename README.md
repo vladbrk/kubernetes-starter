@@ -1,21 +1,20 @@
 # kubernetes-starter
-Bootstrapping Kubernetes clusters 1.16 with kubeadm on Ubuntu 16.04
+Bootstrapping Kubernetes clusters 1.19 with kubeadm on Ubuntu 20.04
 
 #Requirements
-https://v1-16.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
 # Create host(kmaster, knode0, knode1) in VMware Workstation Player 
-- ISO: ubuntu-16.04.7-server-amd64.iso
+- ISO: ubuntu-20.04.1-live-server-amd64.iso
 - username/password: kadmin/123
 - CPU: 1 for nodes, 2 for master
 > 2 CPU obligatory for master: [ERROR NumCPU]: the number of available CPUs 1 is less than the required 2
 - Memory: 1GB
 - Network Connection: Bridged Connected directly to the physical network
 
-# Login to hosts
 - username: kadmin
 - password: 123
-- sudo apt install -y openssh-server
+- install SSH
 
 # Prepare local host
 - sudo apt update && sudo apt install -y sshpass
